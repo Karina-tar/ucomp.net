@@ -5,6 +5,7 @@ import People from "./People";
 import Publications from "./Publications";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import NotFoundPage from "./NotFoundPage";
 
 function Pages() {
   return (
@@ -15,6 +16,7 @@ function Pages() {
     <Route path="people" element={<People />} />
     <Route path="projects" element={<Projects />} />
     <Route path="contact" element={<Contact />} />
+    <Route path="NotFoundPage" element={<NotFoundPage />} />
   </Routes>
   );
 }

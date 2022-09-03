@@ -1,27 +1,51 @@
 @import '../utils/variables.scss';
 
-header {
-  border-bottom: 1px solid rgb(113, 107, 107);
-  padding: 5px 20px;
+.main-header {
+  border-bottom: 1px solid $opacityLineColor;
+  padding: 15px $appPadding;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  h3 {
-    color: rgb(113, 107, 107);
+  .logo {
+    img {
+      height: auto;
+      max-width: 105px;
+    }
   }
 
   ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 
     li {
       list-style-type: none;
 
       a {
-        color: rgb(113, 107, 107);
+        color: $textColor;
+        user-select: none;
+        text-transform: capitalize;
+        font-family: 'Bold';
+
+        &:hover {
+          color: $appColor;
+        }
       }
+    }
+  }
+
+  .special-link {
+    background-color: $appColor;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Bold';
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: $blockShahow;
     }
   }
 }

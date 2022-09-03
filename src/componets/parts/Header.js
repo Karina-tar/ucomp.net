@@ -5,10 +5,11 @@ import '../../assets/styles/css/parts/header.css';
 
 function Header() {
   return (
-    <header className='header'>
-      <Link to="/">
+    <header className='main-header'>
+      <Link to="/" className='logo'>
         <img src={logo} alt="logo"/>
       </Link>
+
       <ul>
         <li>
           <Link to="blog">Blog</Link>
@@ -26,6 +27,8 @@ function Header() {
           <Link to="contact">Contact</Link>
         </li>
       </ul>
+
+      <Link to="contacts" className='special-link'>Contact us</Link>
     </header>
   );
 }
