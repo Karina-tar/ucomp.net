@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
-import '../../assets/styles/css/pages/header.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logoV2.svg'
+
+import '../../assets/styles/css/parts/header.css';
 
 function Header() {
   return (
     <header className='header'>
-      <Link to="/"><h3>ucomp</h3></Link>
+      <Link to="/">
+        <img src={logo} alt="logo"/>
+      </Link>
       <ul>
         <li>
           <Link to="blog">Blog</Link>
