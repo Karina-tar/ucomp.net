@@ -7,10 +7,16 @@
   font-family: 'Regular','Arial';
 }
 
+html, 
+body {
+  background-color: #F9F5EB;
+}
+
 html,
 body, 
 #root {
   height: 100%;
+
 }
 
 .app {
