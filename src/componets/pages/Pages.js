@@ -16,7 +16,7 @@ function Pages() {
     <Route path="people" element={<People />} />
     <Route path="projects" element={<Projects />} />
     <Route path="contact" element={<Contact />} />
-    <Route path="NotFoundPage" element={<NotFoundPage />} />
+    <Route path="*" element={<NotFoundPage />} />
   </Routes>
   );
 }
