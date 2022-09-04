@@ -1,0 +1,26 @@
+@import '../utils/variables.scss';
+@import '../utils/font.scss';
+
+.main_skeleton {
+  color: $textColor;
+
+  display: flex;
+
+  .main_info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .title {
+      font-family: 'MediumBold';
+      color: $appColor;
+      height: auto;
+      max-width: 150px;
+    }
+  }
+
+  img {
+    height: auto;
+    max-width: 3000px;
+  }
+}

@@ -1,3 +1,45 @@
-
+@font-face {
+  font-family: "Light";
+  src: url("../../font/Quicksand/Quicksand-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Regular";
+  src: url("../../font/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MediumBold";
+  src: url("../../font/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../../font/Quicksand/Quicksand-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.main_skeleton {
+  color: rgba(65, 63, 66, 0.8588235294);
+  display: flex;
+}
+.main_skeleton .main_info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main_skeleton .main_info .title {
+  font-family: "MediumBold";
+  color: hsl(236deg, 100%, 67%);
+  height: auto;
+  max-width: 150px;
+}
+.main_skeleton img {
+  height: auto;
+  max-width: 3000px;
+}
 
 /*# sourceMappingURL=home.css.map */
