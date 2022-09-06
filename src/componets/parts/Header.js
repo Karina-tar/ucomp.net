@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logoV2.svg'
+import imgs from '../../assets/images/imgs';
 
 import '../../assets/styles/css/parts/header.css';
 
@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className='main-header'>
       <Link to="/" className='logo'>
-        <img src={logo} alt="logo"/>
+        <img src={imgs.logo} alt="logo"/>
       </Link>
 
       <ul>

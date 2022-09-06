@@ -1,26 +1,35 @@
-import brain from '../../assets/images/brain.png';
+import { Link } from "react-router-dom";
+import imgs from "../../assets/images/imgs";
 
-import '../../assets/styles/css/pages/home.css';
+import '../../assets/styles/css/pages/home.css'
 
 function Home() {
   return (
-    <div className='main_skeleton'>
-      <div className='main_info'>
-        <div><h6>Complex Analytics For Simpler Urban Life</h6></div>
-        <div className='title'><h1>URBAN COMPLEXITY LAB</h1></div>
-        <div className='about'> 
-          <h5>
-            We promote potential of data science and complexity to broad audience and the students through teaching and public speaking.
-          </h5>
-          <h5>
-            Our courses include Applied Data Science, Machine Learning, Network Analysis, Scientific Writing.
-          </h5> 
+    <main>
+      <article className="home-info">
+        <div className="general-info">
+          <span className="description">
+            Complex Analytics For Simpler Urban Life
+          </span>
+          
+          <h1 className="title">
+            urban complexity lab
+          </h1>
+          
+          <h3 className="about">
+            We promote potential of data science and complexity to broad audience and the students through teaching and public speaking. Our courses include Applied Data Science, Machine Learning, Network Analysis, Scientific Writing.
+          </h3>
+          
+          <div className="links">
+            <Link to='Publications' className="active">Publications</Link>
+            <Link to='Contacts'>Contacts</Link>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src={brain} alt="brain"/>
-      </div>
-    </div>
+        <div className="info-image">
+          <img src={imgs.city} alt="city"/>
+        </div>
+      </article>
+    </main>
   );
 }
 
