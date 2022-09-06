@@ -1,6 +1,5 @@
 main .home-info {
   display: flex;
-  gap: 20px;
 }
 main .home-info .general-info {
   gap: 15px;

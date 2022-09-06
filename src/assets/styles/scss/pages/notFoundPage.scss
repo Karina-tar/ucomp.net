@@ -7,12 +7,25 @@ main {
     text-transform: uppercase;
     font-family: 'Bold';
     font-size: 4em;
-    margin-top: 150px;
+    margin-top: 120px;
 
     @include flex-column;
 
     h2 {
       color: $appColor;
+    }
+  }
+
+  .link-block {
+    @include flex;
+
+    a {
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 15px 50px;
+      font-family: 'Bold';
+      background-color: $appColor;
+      color: #fff;
     }
   }
 }

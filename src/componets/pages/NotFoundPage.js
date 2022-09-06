@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../assets/styles/css/pages/notFoundPage.css';
 
 function NotFoundPage() {
@@ -8,8 +9,8 @@ function NotFoundPage() {
         <p>Page Not Found</p>
       </div>
 
-      <div>
-        <></>
+      <div className='link-block'>
+        <Link to='/'>Home</Link>
       </div>
     </main>
   );
