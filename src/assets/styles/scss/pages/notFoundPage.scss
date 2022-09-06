@@ -1,2 +1,18 @@
 @import '../utils/variables.scss';
+@import '../utils/mixins.scss';
 
+main {
+
+  .error_message {
+    text-transform: uppercase;
+    font-family: 'Bold';
+    font-size: 4em;
+    margin-top: 150px;
+
+    @include flex-column;
+
+    h2 {
+      color: $appColor;
+    }
+  }
+}

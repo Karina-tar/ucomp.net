@@ -1,3 +1,16 @@
-
+main .error_message {
+  text-transform: uppercase;
+  font-family: "Bold";
+  font-size: 4em;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .error_message h2 {
+  color: #0082C7;
+}
 
 /*# sourceMappingURL=notFoundPage.css.map */
