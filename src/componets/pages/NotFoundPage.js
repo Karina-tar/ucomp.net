@@ -5,7 +5,7 @@ function NotFoundPage() {
   return (
     <main>
       <div className='error_message'>
-        <h2>404</h2>
+        <span>404</span>
         <p>Page Not Found</p>
       </div>
 

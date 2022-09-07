@@ -26,8 +26,10 @@
   border-bottom: 1px solid rgba(204, 204, 204, 0.3490196078);
   padding: 15px 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .main-header .logo img {

@@ -18,7 +18,7 @@ function Header() {
           <Link to="publications">Publications</Link>
         </li>
         <li>
-          <Link to="people">People</Link>
+          <Link to="team">Team</Link>
         </li>
         <li>
           <Link to="projects">Projects</Link>

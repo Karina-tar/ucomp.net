@@ -1,7 +1,6 @@
 main .error_message {
   text-transform: uppercase;
   font-family: "Bold";
-  font-size: 4em;
   margin-top: 120px;
   display: flex;
   flex-direction: row;
@@ -9,8 +8,12 @@ main .error_message {
   justify-content: center;
   flex-direction: column;
 }
-main .error_message h2 {
+main .error_message span {
   color: #0082C7;
+  font-size: 6em;
+}
+main .error_message p {
+  font-size: 3em;
 }
 main .link-block {
   display: flex;
@@ -19,7 +22,7 @@ main .link-block {
   justify-content: center;
 }
 main .link-block a {
-  border-radius: 8px;
+  border-radius: 30px 0 30px 0;
   margin-top: 20px;
   padding: 15px 50px;
   font-family: "Bold";

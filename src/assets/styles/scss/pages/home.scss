@@ -1,10 +1,11 @@
 @import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
 main {
   .home-info {
     display: flex;
 
     .general-info {
-
       gap: 15px;
       display: flex;
       flex-direction: column;
@@ -16,9 +17,10 @@ main {
 
       .title {
         color: $appColor;
-        font-size: 4em;
+        font-size: 5em;
         font-family: 'Bold';
         text-transform: uppercase;
+        line-height: 80px;
       }
 
       .about {
@@ -31,13 +33,14 @@ main {
 
         a {
           border-radius: 8px;
-          padding: 15px 70px;
+          min-width: 230px;
+          min-height: 50px;
           color: $appColor;
           border: 2px solid #0082c7bd;
           font-family: 'Bold';
           transition: 0.5s;
 
-          display: block;
+          @include flex;
           
           &.active {
             background-color: $appColor;
@@ -53,11 +56,23 @@ main {
 
     .info-image {
       img {
+        margin-top: 5px;
         height: auto;
         max-width: 600px;
         border-radius: 15px;
         box-shadow: 6px 6px 7px #e4e3e3;
       }
+    }
+  }
+
+  .home-text {
+    margin-top: 40px;
+
+    @include flex-column;
+    // align-items: flex-start;
+
+    p {
+      text-align: center;
     }
   }
 }
