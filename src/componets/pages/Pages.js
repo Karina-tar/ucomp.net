@@ -4,7 +4,6 @@ import Home from "./Home";
 import Team from "./Team";
 import Publications from "./Publications";
 import Projects from "./Projects";
-import Contact from "./Contact";
 import NotFoundPage from "./NotFoundPage";
 
 function Pages() {
@@ -15,7 +14,6 @@ function Pages() {
     <Route path="publications" element={<Publications />} />
     <Route path="team" element={<Team />} />
     <Route path="projects" element={<Projects />} />
-    <Route path="contact" element={<Contact />} />
     <Route path="*" element={<NotFoundPage />} />
   </Routes>
   );

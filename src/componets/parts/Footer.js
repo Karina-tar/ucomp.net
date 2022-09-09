@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="footer">
-          <p>ghujikojhgvhjkoS</p>
+          <p>hghujkjhgfhilkjhghiooihghjkuhj</p>
         </footer>
     );
   }

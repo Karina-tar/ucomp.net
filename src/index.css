@@ -22,9 +22,11 @@ body,
 }
 
 .container {
+  min-height: 100vh;
+  margin-top: 61px;
   flex: 1 0 auto;
   padding: 0 40px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .footer, .header {

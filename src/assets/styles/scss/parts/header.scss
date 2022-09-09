@@ -3,12 +3,16 @@
 @import '../utils/mixins.scss';
 
 .main-header {
+  width: calc(100% - 80px);
+  background-color: #ffffffe8;
   border-bottom: 1px solid $opacityLineColor;
   padding: 15px $appPadding;
+
 
   @include flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
 
   .logo {
     img {

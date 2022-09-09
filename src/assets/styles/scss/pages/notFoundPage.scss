@@ -2,21 +2,21 @@
 @import '../utils/mixins.scss';
 
 main {
-
   .error_message {
     text-transform: uppercase;
-    font-family: 'Bold';
     margin-top: 120px;
+    font-family: Bold;
 
     @include flex-column;
 
     span {
+      font-family: 'Bold';
       color: $appColor;
       font-size: 6em;
     }
 
     p {
-      font-size: 3em;
+      font-size: 2.7em;
     }
   }
 
@@ -26,10 +26,16 @@ main {
     a {
       border-radius: 30px 0 30px 0;
       margin-top: 20px;
-      padding: 15px 50px;
-      font-family: 'Bold';
+      padding: 10px 40px;
+      font-family: 'Medium';
       background-color: $appColor;
+      font-size: 1.2em;
       color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

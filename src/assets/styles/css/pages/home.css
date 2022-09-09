@@ -1,66 +1,98 @@
-main .home-info {
-  display: flex;
-}
-main .home-info .general-info {
-  gap: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-main .home-info .general-info .description {
-  font-size: 0.9em;
-}
-main .home-info .general-info .title {
-  color: #0082C7;
-  font-size: 5em;
-  font-family: "Bold";
-  text-transform: uppercase;
-  line-height: 80px;
-}
-main .home-info .general-info .about {
-  font-size: 1.1em;
-}
-main .home-info .general-info .links {
-  display: flex;
-  gap: 20px;
-}
-main .home-info .general-info .links a {
-  border-radius: 8px;
-  min-width: 230px;
-  min-height: 50px;
-  color: #0082C7;
-  border: 2px solid rgba(0, 130, 199, 0.7411764706);
-  font-family: "Bold";
-  transition: 0.5s;
+.home-info {
+  min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
 }
-main .home-info .general-info .links a.active {
+.home-info .cover {
+  display: flex;
+}
+.home-info .cover .general-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.home-info .cover .general-info .description {
+  font-size: 0.9em;
+}
+.home-info .cover .general-info .title {
+  font-size: 4.4em;
+  font-family: "Bold";
+  color: #0082C7;
+  text-transform: uppercase;
+}
+.home-info .cover .general-info .about {
+  font-size: 1.2em;
+}
+.home-info .cover .general-info .links {
+  display: flex;
+  gap: 20px;
+}
+.home-info .cover .general-info .links a {
+  border-radius: 8px;
+  color: #0082C7;
+  border: 2px solid #0082C7;
+  font-family: "MediumBold";
+  padding: 15px 70px;
+  transition: 0.5s;
+  display: block;
+}
+.home-info .cover .general-info .links a.active {
   background-color: #0082C7;
   color: #fff;
 }
-main .home-info .general-info .links a:hover {
+.home-info .cover .general-info .links a:hover {
   opacity: 0.7;
 }
-main .home-info .info-image img {
-  margin-top: 5px;
+.home-info .cover .info-image img {
   height: auto;
   max-width: 600px;
   border-radius: 15px;
   box-shadow: 6px 6px 7px #e4e3e3;
 }
-main .home-text {
-  margin-top: 40px;
+
+.home-question {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+.home-question span {
+  color: #0082C7;
+  text-transform: capitalize;
+}
+
+.home-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.home-blocks .home-block {
+  width: 47%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 20px;
 }
-main .home-text p {
+.home-blocks .home-block span {
   text-align: center;
+}
+.home-blocks .home-block span a {
+  font-family: Medium;
+  color: #0082C7;
+}
+.home-blocks .home-block img {
+  height: auto;
+  max-width: 100px;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,30 +1,35 @@
 @import '../utils/variables.scss';
 @import '../utils/mixins.scss';
 
-main {
-  .home-info {
+.home-info {
+  min-height: calc(100vh - 160px);
+
+  @include flex;
+  align-items: flex-start;
+  padding-top: 80px;
+
+  .cover {
     display: flex;
 
     .general-info {
-      gap: 15px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-around;
+      gap: 10px;
 
       .description {
         font-size: 0.9em;
       }
 
       .title {
-        color: $appColor;
-        font-size: 5em;
+        font-size: 4.4em;
         font-family: 'Bold';
+        color: $appColor;
         text-transform: uppercase;
-        line-height: 80px;
       }
 
       .about {
-        font-size: 1.1em;
+        font-size: 1.2em;
       }
 
       .links {
@@ -33,14 +38,13 @@ main {
 
         a {
           border-radius: 8px;
-          min-width: 230px;
-          min-height: 50px;
           color: $appColor;
-          border: 2px solid #0082c7bd;
-          font-family: 'Bold';
+          border: 2px solid $appColor;
+          font-family: 'MediumBold';
+          padding: 15px 70px;
           transition: 0.5s;
 
-          @include flex;
+          display: block;
           
           &.active {
             background-color: $appColor;
@@ -56,7 +60,6 @@ main {
 
     .info-image {
       img {
-        margin-top: 5px;
         height: auto;
         max-width: 600px;
         border-radius: 15px;
@@ -64,15 +67,48 @@ main {
       }
     }
   }
+}
 
-  .home-text {
-    margin-top: 40px;
 
+.home-question {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+
+  display: block;
+  text-align: center;
+
+  span {
+    color: $appColor;
+    text-transform: capitalize;
+  }
+}
+
+.home-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+
+  .home-block {
+    width: 47%;
+    
     @include flex-column;
-    // align-items: flex-start;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 20px;
 
-    p {
+    span {
       text-align: center;
+
+      a {
+        font-family: Medium;
+        color: $appColor;
+      }
+    }
+
+    img {
+      height: auto;
+      max-width: 100px;
     }
   }
 }

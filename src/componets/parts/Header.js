@@ -23,9 +23,6 @@ function Header() {
         <li>
           <Link to="projects">Projects</Link>
         </li>
-        <li>
-          <Link to="contact">Contact</Link>
-        </li>
       </ul>
 
       <Link to="contacts" className='special-link'>Contact us</Link>
