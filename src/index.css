@@ -29,11 +29,28 @@ body,
   padding-top: 20px;
 }
 
-.footer, .header {
+.footer, 
+.header {
   flex-shrink: 0;
 }
 
 a {
   text-decoration: none;
   transition: 0.5s all;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+button {
+  outline: none;
 }

@@ -1,0 +1,53 @@
+@import '../utils/variables.scss';
+
+.search {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 0 4px;
+  max-width: 300px;
+  min-height: 40px;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  input {
+    border: none;
+    width: calc(100% - 30px);
+    padding-left: 30px;
+    font-family: 'Medium';
+    font-size: 1em;
+    
+    background-image: url('../../../images/parts/search/search.svg');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: left;
+    background-position-x: 6px;
+
+    &::placeholder {
+      color: #666666d6;
+    }
+  }
+
+  .clear {
+    align-self: center;
+    min-width: 8px;
+
+    span {
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    width: 60px;
+    font-size: 1em;
+    font-family: 'Medium';
+    transition: 0.3s;
+
+    &:hover {
+      color: $appColor;
+    }
+  }
+}

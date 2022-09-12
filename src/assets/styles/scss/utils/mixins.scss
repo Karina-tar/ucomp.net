@@ -9,3 +9,7 @@
   @include flex;
   flex-direction: column;
 }
+
+@mixin line-bottom {
+  border-bottom: 1px solid $opacityLineColor;
+}

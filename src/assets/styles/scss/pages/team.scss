@@ -1,0 +1,63 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.team {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  .team-member {
+    display: flex;
+    gap: 20px;
+
+    .team-photo {
+      img {
+      height: auto;
+      max-width: 200px;
+      border-radius: 8px;
+      box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
+      }
+    }
+
+    .team-info {
+      width: 100%;
+      @include line-bottom;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+      .team-name {
+        font-family: 'Medium';
+        font-size: 1.5em;
+      }
+
+      .team-title {        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        span {
+          border: 1.5px solid $appColor;
+          color: $appColor;
+          font-family: 'Medium';
+          font-size: 0.9em;
+          padding: 3px 6px;
+        }
+      }
+    }
+
+    .team-description {
+      font-size: 1em;
+
+      .more-info {
+        cursor: pointer;
+        color: $appColor;
+        font-family: 'Medium';
+        font-size: 1em;
+      }
+    }
+  }
+}

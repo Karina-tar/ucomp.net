@@ -1,0 +1,12 @@
+.title {
+  text-transform: capitalize;
+  color: #0082C7;
+  font-size: 2.3em;
+  font-family: "Bold";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=title.css.map */

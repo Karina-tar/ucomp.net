@@ -1,3 +1,70 @@
-
+.footer {
+  margin-top: 50px;
+  border: 1px solid rgba(204, 204, 204, 0.3490196078);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.footer .footer-title {
+  transform: rotate(270deg);
+  padding-bottom: 40px;
+  font-size: 2em;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3490196078);
+  display: flex;
+}
+.footer .footer-title h2 {
+  text-transform: uppercase;
+  color: #0082C7;
+  font-family: "Bold";
+}
+.footer .cover {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.footer .cover .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .cover .info h3 {
+  font-family: "Bold";
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.footer .cover .info .description b {
+  color: #0082C7;
+}
+.footer .cover .info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer .cover .info ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+.footer .cover .info ul li a img {
+  height: auto;
+  max-width: 40px;
+}
+.footer .cover .info ul li a span {
+  transition: 0.3s;
+}
+.footer .cover .info ul li a span:hover {
+  color: #0082C7;
+}
 
 /*# sourceMappingURL=footer.css.map */

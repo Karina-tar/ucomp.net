@@ -1,0 +1,51 @@
+.team {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.team .team-member {
+  display: flex;
+  gap: 20px;
+}
+.team .team-member .team-photo img {
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
+}
+.team .team-member .team-info {
+  width: 100%;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3490196078);
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.team .team-member .team-info .team-name {
+  font-family: "Medium";
+  font-size: 1.5em;
+}
+.team .team-member .team-info .team-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.team .team-member .team-info .team-title span {
+  border: 1.5px solid #0082C7;
+  color: #0082C7;
+  font-family: "Medium";
+  font-size: 0.9em;
+  padding: 3px 6px;
+}
+.team .team-member .team-description {
+  font-size: 1em;
+}
+.team .team-member .team-description .more-info {
+  cursor: pointer;
+  color: #0082C7;
+  font-family: "Medium";
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=team.css.map */

@@ -1,0 +1,81 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.footer {
+  margin-top: 50px;
+  border: 1px solid $opacityLineColor;
+  padding: 40px 30px;
+
+  @include flex;
+  justify-content: space-between;
+
+  .footer-title {
+    transform: rotate(270deg);
+    padding-bottom: 40px;
+    font-size: 2em;
+    @include line-bottom;
+
+    display: flex;
+
+    h2 {
+      text-transform: uppercase;
+      color: $appColor;
+      font-family: 'Bold';
+    }
+  }
+
+  .cover {
+    width: 80%;
+
+    @include flex;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h3 {
+        font-family: 'Bold';
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+
+      .description {
+        b {
+          color: $appColor;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        li {
+          a {
+            @include flex;
+            gap: 14px;
+            padding-right: 5px;
+            border-radius: 3px;
+
+            img {
+              height: auto;
+              max-width: 40px;
+
+            }
+  
+            span {
+              transition: 0.3s;
+
+              &:hover {
+                color: $appColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

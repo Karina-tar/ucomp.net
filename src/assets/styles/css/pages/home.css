@@ -33,13 +33,17 @@
   gap: 20px;
 }
 .home-info .cover .general-info .links a {
+  min-width: 120px;
   border-radius: 8px;
   color: #0082C7;
   border: 2px solid #0082C7;
-  font-family: "MediumBold";
+  font-family: "Medium";
   padding: 15px 70px;
   transition: 0.5s;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .home-info .cover .general-info .links a.active {
   background-color: #0082C7;
@@ -81,13 +85,13 @@
   flex-direction: column;
   flex-direction: column-reverse;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2px;
 }
 .home-blocks .home-block span {
   text-align: center;
 }
 .home-blocks .home-block span a {
-  font-family: Medium;
+  font-family: "Medium";
   color: #0082C7;
 }
 .home-blocks .home-block img {
