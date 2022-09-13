@@ -1,6 +1,6 @@
 @import '../utils/variables.scss';
 
-.search {
+.page-search {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 auto;
@@ -35,8 +35,12 @@
     min-width: 8px;
 
     span {
-      user-select: none;
+      display: none;
       cursor: pointer;
+
+      &.active {
+        display: block;
+      }
     }
   }
 
@@ -44,6 +48,7 @@
     width: 60px;
     font-size: 1em;
     font-family: 'Medium';
+    text-transform: uppercase;
     transition: 0.3s;
 
     &:hover {

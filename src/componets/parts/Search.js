@@ -1,17 +1,30 @@
+import { useState } from 'react';
 import '../../assets/styles/css/parts/search.css';
 
-function Search() {
+function Search(props) {
+  const [inputValue, setInputText] = useState('')
+  
+  function find(event) {
+    console.log(inputValue)
+  }
+
   return (
-    <div className='search'>
-      <input />
+    <div className='page-search'>
+      <input 
+        value={inputValue}
+        onChange={event => setInputText(event.target.value)}
+        placeholder={props.placeholder} 
+        type='text' />
 
       <div className='clear'>
-        <span>
+        <span
+          onClick={() => setInputText('')}
+          className={inputValue ? 'active' : ''}>
           &times;
         </span>
       </div>
 
-      <button>Find</button>
+      <button onClick={find}>find</button>
     </div>
   )
 }

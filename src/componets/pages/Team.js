@@ -4,7 +4,7 @@ import Search from '../parts/Search';
 import { useState } from 'react';
 
 function Team() {
-  const limitDescription = 225;
+  const limitDescription = 355;
 
   let people = [
     {
