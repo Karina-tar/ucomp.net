@@ -24,7 +24,7 @@ function Search(props) {
         </span>
       </div>
 
-      <button onClick={find}>find</button>
+      <button onClick={find}>Find</button>
     </div>
   )
 }

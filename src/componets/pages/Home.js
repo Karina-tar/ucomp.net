@@ -23,7 +23,7 @@ function Home() {
             
             <div className="links">
               <Link to="publications" className="active">Publications</Link>
-              <Link to="/">Contacts</Link>
+              <Link to="team">Team</Link>
             </div>
           </div>
 

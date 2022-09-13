@@ -15,7 +15,7 @@
     .team-photo {
       img {
       height: auto;
-      max-width: 200px;
+      max-width: 150px;
       border-radius: 8px;
       box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
       }
@@ -31,16 +31,17 @@
       
       .team-name {
         font-family: 'Medium';
-        font-size: 1.5em;
+        font-size: 1.7em;
       }
 
-      .team-title {        
+      .team-title {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
 
-        span {
+        span {     
           border: 1.5px solid $appColor;
+          border-radius: 3px;
           color: $appColor;
           font-family: 'Medium';
           font-size: 0.9em;

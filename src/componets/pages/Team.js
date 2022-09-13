@@ -16,7 +16,7 @@ function Team() {
     {
       image: 'https://ucomp.net/wp-content/uploads/2019/10/Chaopgui2.png',
       username: 'Prof. Chaogui Kang',
-      titles: [ 'Visiting scholar – Associate Professor At Wuhan University' ],
+      titles: [ 'Visiting scholar' , 'Associate Professor At Wuhan University' ],
       description: ''
     }, 
     {

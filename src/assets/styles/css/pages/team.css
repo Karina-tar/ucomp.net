@@ -10,7 +10,7 @@
 }
 .team .team-member .team-photo img {
   height: auto;
-  max-width: 200px;
+  max-width: 150px;
   border-radius: 8px;
   box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
 }
@@ -24,7 +24,7 @@
 }
 .team .team-member .team-info .team-name {
   font-family: "Medium";
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .team .team-member .team-info .team-title {
   display: flex;
@@ -33,6 +33,7 @@
 }
 .team .team-member .team-info .team-title span {
   border: 1.5px solid #0082C7;
+  border-radius: 3px;
   color: #0082C7;
   font-family: "Medium";
   font-size: 0.9em;
