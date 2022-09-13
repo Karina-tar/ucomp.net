@@ -59,7 +59,7 @@ function Team() {
 
   const [members, setMembers] = useState(people)
 
-  function showFullDescription(index) {
+  function toggleDescription(index) {
     const _members = members.map((member, i) => {
       if (i === index) {
         member.hiddenText = !member.hiddenText
@@ -71,54 +71,63 @@ function Team() {
     setMembers(_members)
   }
 
+  const [searchValue, setSearchValue] = useState('')
+
+  function membersFinder (searchString) {
+    setSearchValue(searchString)
+  }
 
     return (
       <main>
         <Title text="ucomp lab team" />
         <br />
-        <Search placeholder="Search by team" />
+        <Search 
+          onClickHandler={membersFinder}
+          onChangeHandler={membersFinder}
+          placeholder="Search by team" />
 
         <article className='team'>
           {
             members.map ((member, index) => {
-              return (
+              return member.username.toLowerCase().includes(searchValue.toLowerCase()) ? 
                 <section className='team-member' key={index}>
-                  <div className='team-photo'>
-                    <img src={member.image} alt='photo'/>
-                  </div>
-
-                  <div className='team-info'>
-                    <h2 className='name'>{member.username}</h2>
-
-                    <div className='team-title'> 
-                      {
-                      member.titles.map((title, i) => 
-                      <span key={i}>{title}</span>)
-                      }
+                    <div className='team-photo'>
+                      <img src={member.image} alt='photo'/>
                     </div>
 
-                    <span className='team-description'>
-                      {
-                        member.hiddenText ?
-                          <>
-                            {`${member.description.slice(0, limitDescription)}... `}
-                            <button onClick={() => showFullDescription(index)} className='more-info'>more</button>
-                          </>
-                          :
-                          <>
-                            {member.description}
-                            {
-                              member.description?.length < limitDescription ? 
-                              '' 
-                              : 
-                              <button onClick={() => showFullDescription(index)} className='more-info'>less</button>
-                            }
-                          </>
-                      }
-                    </span>
-                  </div>
+                    <div className='team-info'>
+                      <h2 className='name'>{member.username}</h2>
+
+                      <div className='team-title'> 
+                        {
+                        member.titles.map((title, i) => 
+                        <span key={i}>{title}</span>)
+                        }
+                      </div>
+
+                      <span className='team-description'>
+                        {
+                          member.hiddenText ?
+                            <>
+                              {`${member.description.slice(0, limitDescription)}... `}
+                              <button onClick={() => toggleDescription(index)} className='more-info'>more</button>
+                            </>
+                            :
+                            <>
+                              {member.description}
+                              {
+                                member.description?.length < limitDescription ? 
+                                '' 
+                                : 
+                                <button onClick={() => toggleDescription(index)} className='more-info'>less</button>
+                              }
+                            </>
+                        }
+                      </span>
+                    </div>
                 </section>
-              )
+                :
+                ''
             })
           }
         </article>

@@ -4,27 +4,38 @@ import '../../assets/styles/css/parts/search.css';
 function Search(props) {
   const [inputValue, setInputText] = useState('')
   
-  function find(event) {
-    console.log(inputValue)
+  function onClickEvent (event) {
+    props.onClickHandler(inputValue)
+  }
+
+  function onClearEvent (event) {
+    setInputText('')
+    props.onClickHandler('')
+  }
+
+  function onChangeEvent (event) {
+    let text = event.target.value
+    setInputText(text)
+    props.onChangeHandler(text)
   }
 
   return (
     <div className='page-search'>
       <input 
         value={inputValue}
-        onChange={event => setInputText(event.target.value)}
+        onChange={onChangeEvent}
         placeholder={props.placeholder} 
         type='text' />
 
       <div className='clear'>
         <span
-          onClick={() => setInputText('')}
+          onClick={onClearEvent}
           className={inputValue ? 'active' : ''}>
           &times;
         </span>
       </div>
 
-      <button onClick={find}>Find</button>
+      <button onClick={onClickEvent}>Find</button>
     </div>
   )
 }
