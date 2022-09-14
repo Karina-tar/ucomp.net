@@ -1,0 +1,17 @@
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.message span {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 1em;
+  border: 1.5px solid rgba(102, 102, 102, 0.2392156863);
+  color: rgba(102, 102, 102, 0.8196078431);
+  user-select: none;
+}
+
+/*# sourceMappingURL=no-result.css.map */

@@ -4,31 +4,16 @@
 .footer {
   margin-top: 50px;
   border: 1px solid $opacityLineColor;
-  padding: 40px 30px;
+  padding: 40px 100px;
 
   @include flex;
-  justify-content: space-between;
-
-  .footer-title {
-    transform: rotate(270deg);
-    padding-bottom: 40px;
-    font-size: 2em;
-    @include line-bottom;
-
-    display: flex;
-
-    h2 {
-      text-transform: uppercase;
-      color: $appColor;
-      font-family: 'Bold';
-    }
-  }
 
   .cover {
-    width: 80%;
-
+    width: 100%;
+    
     @include flex;
     justify-content: space-between;
+    align-items: center;
 
     .info {
       display: flex;

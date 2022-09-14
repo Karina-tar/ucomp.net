@@ -13,10 +13,6 @@ function Footer() {
 
   return (
     <footer className='footer'>
-      <article className='footer-title'>
-        <h2>ucomp</h2>
-      </article>
-
       <article className='cover'>
         <section className='info'>
           <h3>urban complexity lab</h3>
@@ -37,7 +33,7 @@ function Footer() {
               </a>
             </li>          
             <li>
-              <a target='_blank' href={location}>
+              <a target='_blank' rel='noreferrer' href={location}>
                 <img src={images.location} alt='contact'/>
                 <span>{address}</span>
               </a>

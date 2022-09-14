@@ -1,0 +1,15 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.message {
+  @include flex-column;
+
+  span {
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 1em;
+    border: 1.5px solid #6666663d;
+    color: #666666d1;
+    user-select: none;
+  }
+}

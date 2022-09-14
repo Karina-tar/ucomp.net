@@ -2,6 +2,7 @@ import '../../assets/styles/css/pages/team.css';
 import Title from '../parts/Title';
 import Search from '../parts/Search';
 import { useState } from 'react';
+import NoResult from '../parts/NoResult';
 
 function Team() {
   const limitDescription = 355;
@@ -92,7 +93,7 @@ function Team() {
               return member.username.toLowerCase().includes(searchValue.toLowerCase()) ? 
                 <section className='team-member' key={index}>
                     <div className='team-photo'>
-                      <img src={member.image} alt='photo'/>
+                      <img src={member.image} alt='person' />
                     </div>
 
                     <div className='team-info'>
@@ -131,6 +132,13 @@ function Team() {
             })
           }
         </article>
+
+        {
+        !members.some((member) => member.username.toLowerCase().includes(searchValue)) ?
+          <NoResult text="Team members not found" />
+          :
+          ''
+        }
       </main>
     );
   }
